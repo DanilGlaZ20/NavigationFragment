@@ -39,14 +39,6 @@
             app:destination="@id/transferFragment" />
     </fragment>
     <fragment
-        android:id="@+id/historyFragment"
-        android:name="com.example.navigationfragment.fragments.HistoryFragment"
-        android:label="HistoryFragment" >
-        <action
-            android:id="@+id/action_historyFragment_to_mainFragment"
-            app:destination="@id/mainFragment" />
-    </fragment>
-    <fragment
         android:id="@+id/transferFragment"
         android:name="com.example.navigationfragment.fragments.TransferFragment"
         android:label="fragment_transfer"
@@ -62,6 +54,15 @@
         tools:layout="@layout/fragment_confirm" >
         <action
             android:id="@+id/action_confirmFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/historyFragment"
+        android:name="com.example.navigationfragment.fragments.HistoryFragment"
+        android:label="fragment_history2"
+        tools:layout="@layout/fragment_history2" >
+        <action
+            android:id="@+id/action_historyFragment_to_mainFragment"
             app:destination="@id/mainFragment" />
     </fragment>
 </navigation>
