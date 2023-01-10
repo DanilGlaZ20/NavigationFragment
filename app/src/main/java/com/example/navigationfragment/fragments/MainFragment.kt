@@ -28,6 +28,7 @@ class MainFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         binding.balance.setOnClickListener{MAIN.navController.navigate(R.id.action_mainFragment_to_balanceFragment)}
         binding.payment.setOnClickListener{MAIN.navController.navigate(R.id.action_mainFragment_to_paymentFragment)}
+        binding.history.setOnClickListener{MAIN.navController.navigate(R.id.action_mainFragment_to_historyFragment)}
     }
 
 }

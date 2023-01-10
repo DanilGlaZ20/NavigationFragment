@@ -9,7 +9,7 @@ import androidx.navigation.NavController
 import androidx.navigation.fragment.findNavController
 import com.example.navigationfragment.MAIN
 import com.example.navigationfragment.R
-import com.example.navigationfragment.databinding.FragmentMainBinding
+
 
 import com.example.navigationfragment.databinding.FragmentPaymentBinding
 
@@ -28,7 +28,7 @@ class PaymentFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-       // binding.give.setOnClickListener{ MAIN.navController.navigate(R.id.action_paymentFragment_to_transferFragment)}
+        binding.give.setOnClickListener{ MAIN.navController.navigate(R.id.action_paymentFragment_to_transferFragment)}
 
     }
 

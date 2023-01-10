@@ -1,7 +1,10 @@
 package com.example.navigationfragment
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
+import android.widget.EditText
 import androidx.navigation.NavController
 import androidx.navigation.Navigation
 import com.example.navigationfragment.databinding.ActivityMainBinding
@@ -20,5 +23,6 @@ class MainActivity : AppCompatActivity() {
         MAIN=this
 
     }
+
 
 }
