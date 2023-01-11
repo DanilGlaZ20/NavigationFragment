@@ -16,8 +16,6 @@ import com.example.navigationfragment.databinding.FragmentTransferBinding
 
 class ConfirmFragment : Fragment() {
 
-
-
     lateinit var binding:FragmentConfirmBinding
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?
@@ -30,9 +28,7 @@ class ConfirmFragment : Fragment() {
         requireActivity().onBackPressedDispatcher.addCallback(viewLifecycleOwner, callback)
         binding= FragmentConfirmBinding.inflate(layoutInflater, container, false)
         return binding.root
-        // return inflater.inflate(R.layout.fragment_transfer,container, false)
     }
-
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
@@ -40,6 +36,4 @@ class ConfirmFragment : Fragment() {
         val text=arguments?.getString("Num")
         txt.text=text
     }
-
-
-    }
+}

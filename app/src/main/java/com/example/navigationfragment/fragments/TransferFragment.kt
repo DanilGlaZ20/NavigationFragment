@@ -23,25 +23,7 @@ class TransferFragment : Fragment() {
                               savedInstanceState: Bundle?
     ): View? { binding= FragmentTransferBinding.inflate(layoutInflater, container, false)
         return binding.root
-        // return inflater.inflate(R.layout.fragment_transfer,container, false)
         }
-
-
-
-   /* override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
-        val button=view.findViewById<Button>(R.id.yes)
-        val editText=view.findViewById<EditText>(R.id.editTextPrice)
-
-            button.setOnClickListener{
-            val price=editText.text
-            val number="$price"
-
-
-                val bundle: Bundle()
-                bundle.putString("Num",number)
-                findNavController().navigate(R.id.action_transferFragment_to_confirmFragment, )
-        }*/
 
         override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
             super.onViewCreated(view, savedInstanceState)
@@ -55,12 +37,8 @@ class TransferFragment : Fragment() {
                 val price = editTextPrice.text
                 val phone=editTextPhone.text
                 val number = "Номер получателя:$phone\nСумма для отправления:$price"
-
                 bundle.putString("Num", number)
                 findNavController().navigate(R.id.action_transferFragment_to_confirmFragment, bundle)
-
-                //val action = FragmentOneDirections.actionFragmentOneToFragmentTwo(hello)
-                //findNavController().navigate(action)
             }
     }
 

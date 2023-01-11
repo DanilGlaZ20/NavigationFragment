@@ -16,7 +16,6 @@ class BalanceFragment : Fragment() {
 
     lateinit var binding: FragmentBalanceBinding
 
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -27,16 +26,10 @@ class BalanceFragment : Fragment() {
             }
         }
         requireActivity().onBackPressedDispatcher.addCallback(viewLifecycleOwner, callback)
-        //return inflater.inflate(layoutInflater, container, false)
         binding = FragmentBalanceBinding.inflate(layoutInflater, container, false)
         return binding.root
     }
-
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
-
-
-        }
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) { super.onViewCreated(view, savedInstanceState) }
     }
 
 
